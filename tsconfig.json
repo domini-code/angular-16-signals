@@ -3,7 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@pages/*": ["src/app/pages/*"]
+      "@pages/*": ["src/app/pages/*"],
+      "@shared/*": ["src/app/shared/*"]
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
