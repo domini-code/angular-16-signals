@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,6 +7,6 @@ import { Component } from '@angular/core';
     LOGIN works!
   </h1>`,
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
 })
 export class LoginComponent {}
