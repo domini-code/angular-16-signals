@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
-import { NgSwitch, NgSwitchDefault, NgSwitchCase } from '@angular/common';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    standalone: true,
-    imports: [NgSwitch, NgSwitchDefault, NgSwitchCase, RouterOutlet]
+  selector: 'app-root',
+  template: `<app-navbar />
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>`,
+  standalone: true,
+  imports: [RouterOutlet, CommonModule, NavbarComponent],
 })
 export class AppComponent {
-  title = 'demo';
+  title = 'Demo WK';
 }
