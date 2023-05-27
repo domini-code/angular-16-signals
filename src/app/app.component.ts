@@ -6,7 +6,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   template: `<app-navbar />
-    <div class="container">
+    <div class="container mx-auto my-2">
       <router-outlet></router-outlet>
     </div>`,
   standalone: true,
